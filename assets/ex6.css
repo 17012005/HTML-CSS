@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+  }
+  html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin: 50px;
+}
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+ul {
+   list-style: none; 
+  
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+   
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+  }
+  nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+  }
+  button{
+    border: none;
+    transition: o.2s ease-in-out;
+  }
+  button:hover{
+    transition: o.2s ease-in-out;
+    opacity: 0.8;
+  }
+  .hero-section{
+    background-image: url(https://raw.githubusercontent.com/anshuopinion/10-Practice-Project-Html-CSS/Project-6-Music-Website/Project%206/images/hero_image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  .hero-section .container{
+    display: flex;
+  flex-direction: column;
+  gap:30px
+  }
+  .container h1{
+    font-size: 80px;
+  }
+  .container h3{
+    font-size: 34px;
+  }
+.music-section{
+    background: var(--purple500);
+    padding-top: 50px;
+}
+.music-section .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 30px;
+}
+.i-btn{
+    background-color: #dc0000;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.secondary-btn {
+    background-color: var(--purple300);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+.ipad-iphone-img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+  }
+.about-music{
+  margin-top: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+.about-video{
+  background-image: url(https://raw.githubusercontent.com/anshuopinion/10-Practice-Project-Html-CSS/Project-6-Music-Website/Project%206/images/video.png);
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  min-height: 600px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  gap: 25px;
+}
+.about-video .container{
+  margin-top: -200px;
+}
+.container h3{
+  padding-bottom: 20px;
+
+}
+.about-gift{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-top: 110px;
+  gap: 34px;
+  margin-bottom: 50px;
+}
+.gift-content{
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+}
+.sec-bt{
+  align-self: flex-start;
+}
+.line{
+  border: 1.5px solid #a3a0a0;
+}
+.upper-footer{
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.upper-footer .container{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links h4{
+  font-size: 24px;
+  border-bottom: 2px solid white;
+  padding-bottom: 6px;
+}
+.footer-links ul{
+  padding-top: 10px;
+  
+}
+.lower-footer{
+  background-color: var(--purple300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lower-footer p{
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 30px 0;
+}
+@media (max-width: 786px){
+  /* .logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-section{
+   display: grid;
+   place-items: center;
+  
+  }
+  .hero-section h1{
+    font-size: 20px;
+  } */
+}
